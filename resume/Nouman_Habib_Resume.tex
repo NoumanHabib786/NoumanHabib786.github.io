@@ -1,0 +1,188 @@
+%% CV - Muhammad Nouman Habib
+%% Master CV: Senior Full Stack Mobile Developer (matches the portfolio site, Nov 2026)
+%%
+%% Template: navy-serif (same style as the tailored CVs in ai-job-search/cv).
+%% Compile with: lualatex Nouman_Habib_Resume.tex
+
+\documentclass[10.5pt,a4paper]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+
+\setmainfont{TeX Gyre Termes}
+
+\setlength{\parindent}{0pt}
+
+\definecolor{navyheading}{HTML}{1F3864}
+\definecolor{graytext}{HTML}{444444}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=navyheading,
+    urlcolor=navyheading,
+    pdftitle={Muhammad Nouman Habib - CV},
+    pdfauthor={Muhammad Nouman Habib},
+    pdfpagemode=UseNone,
+}
+
+\setlist[itemize]{nosep, leftmargin=1.1em, topsep=2pt, itemsep=2.5pt, label=\textbullet}
+
+\newcommand{\cvsection}[1]{%
+    \vspace{10pt}
+    \noindent{\color{navyheading}\bfseries\large #1}\par
+    \vspace{-2pt}
+    \noindent{\color{navyheading}\rule{\linewidth}{0.5pt}}\par
+    \vspace{2pt}%
+    \noindent\ignorespaces
+}
+
+\newcommand{\cvsubentry}[4]{%
+    \vspace{7pt}%
+    \noindent{\bfseries #1}\hfill{\bfseries #2}\par
+    \noindent{\color{graytext}\itshape #3}\par
+}
+
+\newcommand{\cvedu}[2]{%
+    \vspace{5pt}%
+    \noindent{\bfseries #1}\par
+    \noindent #2\par
+}
+
+\newcommand{\cvapp}[2]{%
+    \vspace{2pt}%
+    \noindent{\bfseries #1}: #2\par
+}
+
+\newcommand{\cvgroup}[1]{%
+    \vspace{5pt}%
+    \noindent{\color{graytext}\itshape #1}\par
+}
+
+\pagestyle{empty}
+
+\begin{document}
+\justifying
+
+% ============================================================
+%     HEADER
+% ============================================================
+\begin{center}
+    {\color{navyheading}\LARGE\bfseries Muhammad Nouman Habib}\\[3pt]
+    {\color{graytext} Senior Full Stack Mobile Developer \& Team Lead \quad|\quad Flutter $\cdot$ SwiftUI $\cdot$ Node.js $\cdot$ MongoDB $\cdot$ OpenAI}\\[3pt]
+    {\color{graytext}\small +92 348 6604774 \quad|\quad \href{mailto:noumanhabib0348@gmail.com}{noumanhabib0348@gmail.com} \quad|\quad Lahore, Pakistan (Remote)}\\[1pt]
+    {\color{graytext}\small \href{https://noumanhabib786.github.io}{noumanhabib786.github.io} \quad|\quad \href{https://www.linkedin.com/in/nouman-habib-0208b1220}{LinkedIn} \quad|\quad \href{https://github.com/NoumanHabib786}{GitHub} \quad|\quad \href{https://pub.dev/packages/easy_support_flutter}{pub.dev}}
+\end{center}
+
+% ============================================================
+%     PROFESSIONAL SUMMARY
+% ============================================================
+\cvsection{Professional Summary}
+\small
+Senior Full Stack Mobile Developer and Team Lead with 3.5+ years building cross-platform iOS and Android apps in Flutter, plus native iOS apps in SwiftUI, and the Node.js, Express and MongoDB backends behind them. Shipped 5 live production apps and supported 6+ more across product and service companies. Led a team of 3--4 engineers at Octet Solutions and owned end-to-end delivery of OneVision and NaskoChina. Strong in clean architecture, RESTful APIs and Socket.IO real-time on both Flutter and iOS, OpenAI-powered chatbots, payments and wallets, and live video calling.
+
+% ============================================================
+%     TECHNICAL SKILLS
+% ============================================================
+\cvsection{Technical Skills}
+\small
+\begin{itemize}
+\item \textbf{Mobile (Flutter)}: Flutter, Dart, Android, iOS, Google Maps SDK, geofencing, location tracking, dynamic app links, push notifications, in-app subscriptions
+\item \textbf{Native iOS}: Swift, SwiftUI, MVVM with the Observation framework, REST via URLSession and async/await, Socket.IO, Keychain
+\item \textbf{Architecture \& State}: Clean Architecture, MVVM, MVC, Repository pattern, dependency injection, GetX, BLoC, Provider
+\item \textbf{Backend \& Real-time}: Node.js, Express, MongoDB (Mongoose), RESTful APIs, JWT auth, WebSockets, Socket.IO, WebRTC, Agora RTC, Dio
+\item \textbf{AI \& Chatbots}: OpenAI API (Assistants API threads and runs, GPT chat, image generation), system prompts, structured JSON outputs, support chatbots with live-agent handoff
+\item \textbf{Firebase \& Data}: Auth, Firestore, Realtime Database, Cloud Functions, FCM, Crashlytics, ObjectBox, Hive, SQLite, Secure Storage
+\item \textbf{Payments}: Stripe, Google Pay, RevenueCat, Google Play Billing
+\item \textbf{Tooling}: Git (GitHub, GitLab), Docker, CI/CD, Google Play Console, App Store Connect, unit and widget testing
+\item \textbf{Leadership}: Team leadership, code reviews, sprint planning, mentoring, client communication, Agile/Scrum
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+\cvsection{Professional Experience}
+\small
+
+\cvsubentry{Senior Flutter Developer \& Team Lead}{Jan 2025 -- Aug 2026}{Octet Solutions | Lahore, Pakistan (Product-Based)}{}
+\begin{itemize}
+    \item {Led a team of 3--4 Flutter developers: code reviews, sprint planning and day-to-day technical mentoring}
+    \item {Owned the product lifecycle: requirements, architecture (Clean Architecture, MVVM), release and post-launch iteration}
+    \item {Primary client point of contact, translating business requirements into scalable technical plans}
+    \item {Built location tracking and geofenced clock-in for OneVision with the Google Maps SDK, live on Google Play and the App Store}
+    \item {Added an OpenAI in-app assistant (Assistants API, structured JSON replies routed by category) and GPT chat with image generation to NaskoChina's Node.js backend}
+    \item {Published \texttt{easy\_support\_flutter}, an open-source support-chat SDK (chatbot and live agent over WebSockets) on pub.dev}
+\end{itemize}
+
+\cvsubentry{Flutter Developer}{2024 -- 2025}{Sparkle Solutions | Service-Based}{}
+\begin{itemize}
+    \item {Built and shipped the Sparkle app end-to-end on REST APIs within tight project timelines}
+\end{itemize}
+
+\cvsubentry{Flutter Developer}{2024}{Finjineers | Service-Based}{}
+\begin{itemize}
+    \item {Shipped Instructor Connect to Google Play and the App Store with Firebase, REST APIs and push notifications}
+    \item {Front-end work on Blood-bud, Tada, Guava, GoViral and Agora video-calling apps, built on reusable components}
+\end{itemize}
+
+\cvsubentry{Flutter Developer}{2023 -- 2024}{Nasko Enterprise | Service-Based}{}
+\begin{itemize}
+    \item {Led NaskoChina, a B2B trade platform with real-time chat and a multi-currency wallet (USD / EUR / RMB), to its Google Play release}
+    \item {Migrated messaging from Firestore listeners to a Socket.IO backend with a JWT-authenticated handshake: 1:1 and group chat, mentions, reactions, read receipts and settings sync}
+    \item {Built wallet top-ups with Stripe and Google Pay, QR send/receive, socket-driven payment requests and deep-link routing}
+\end{itemize}
+
+\cvsubentry{Flutter Developer Intern}{2022}{Finjineers | Lahore, Pakistan}{}
+\begin{itemize}
+    \item {Contributed to live client projects while building practical, production Flutter skills}
+\end{itemize}
+
+% ============================================================
+%     DELIVERED APPS
+% ============================================================
+\cvsection{Delivered Apps}
+\small
+\cvgroup{Shipped to the stores (5)}
+\cvapp{NaskoChina (Lead)}{B2B trade, chat and multi-currency wallet. Flutter, GetX, Socket.IO, Node.js, OpenAI, Stripe. \href{https://play.google.com/store/apps/details?id=com.qrm.naskochina}{Google~Play}}
+\cvapp{OneVision (Lead)}{Workforce scheduling, timecards and training. Flutter, Google Maps SDK, geofencing, Firebase. \href{https://play.google.com/store/apps/details?id=onevision.io.ui}{Google~Play} \textbar\ \href{https://apps.apple.com/us/app/onevision/id1583380071}{App~Store}}
+\cvapp{Instructor Connect (Core)}{Driving-lesson booking for a UK client. Flutter, Firebase, REST, FCM. \href{https://apps.apple.com/gb/app/instructor-connect/id6478342769}{App~Store}}
+\cvapp{The Fire Book (Core)}{Employee records and shift scheduling. Flutter, Firebase, REST, FCM.}
+\cvapp{Advo Health (Core)}{Telehealth video consultations. Flutter, WebRTC, RevenueCat, Google Play Billing, Firebase.}
+
+\cvgroup{Freelance builds}
+\cvapp{Dessert Wala}{Dessert ordering and delivery for a UK shop. Flutter, GetX, native Stripe checkout, Google Sign-In, Geolocator, loyalty points, promo codes, FCM.}
+\cvapp{SA Speed Aluminium}{E-commerce store for aluminium hardware in Pakistan. Next.js storefront on an Express + MongoDB API with JWT auth, Helmet, rate limiting, Cloudinary and email. \href{https://saspeedhardware.com/}{saspeedhardware.com}}
+
+\cvgroup{Supported (6+)}
+\noindent Sparkle, Blood-bud, Tada, Guava, GoViral and Agora video-calling apps.\par
+
+\cvgroup{Open source}
+\noindent \href{https://pub.dev/packages/easy_support_flutter}{\texttt{easy\_support\_flutter}}, a Flutter SDK for in-app support chat (Dart, WebSockets, Socket.IO, Dio).
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+\cvsection{Education}
+\small
+\cvedu{BSc in Computer Science}{Superior University | Lahore, Pakistan | 2018 -- 2024}
+\begin{itemize}
+    \item {Coursework: Data Structures, Algorithms, Database Management, OOP, Software Engineering}
+\end{itemize}
+
+\cvedu{Professional Flutter Development Course}{Corvit Systems | Lahore, Pakistan}
+
+% ============================================================
+%     ADDITIONAL INFORMATION
+% ============================================================
+\cvsection{Additional Information}
+\small
+\begin{itemize}
+\item {\textbf{Languages}: Urdu (native), English (fluent)}
+\item {\textbf{Availability}: Based in Lahore; open to fully remote roles worldwide or on-site in Lahore}
+\item {\textbf{Portfolio}: \href{https://noumanhabib786.github.io}{noumanhabib786.github.io}}
+\end{itemize}
+
+\end{document}
